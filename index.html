@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LORD OBEC - ติดตามเรา</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 40px 30px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 20px;
+            padding: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .title {
+            font-size: 28px;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #718096;
+            margin-bottom: 32px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        
+        .social-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 24px;
+            border-radius: 16px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .social-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .social-btn:hover::before {
+            left: 100%;
+        }
+        
+        .social-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .facebook {
+            background: linear-gradient(135deg, #1877f2, #42a5f5);
+            color: white;
+        }
+        
+        .instagram {
+            background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+            color: white;
+        }
+        
+        .tiktok {
+            background: linear-gradient(135deg, #000000, #ff0050);
+            color: white;
+        }
+        
+        .social-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+            fill: currentColor;
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+                margin: 10px;
+            }
+            
+            .title {
+                font-size: 24px;
+            }
+            
+            .subtitle {
+                font-size: 14px;
+            }
+            
+            .social-btn {
+                padding: 14px 20px;
+                font-size: 15px;
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .container > * {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        
+        .container > *:nth-child(2) { animation-delay: 0.1s; }
+        .container > *:nth-child(3) { animation-delay: 0.2s; }
+        .container > *:nth-child(4) { animation-delay: 0.3s; }
+        .container > *:nth-child(5) { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50MSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMyRDdEMzIiLz4KPHN0b3Agb2Zmc2V0PSIzMCUiIHN0b3AtY29sb3I9IiM0M0EwNDciLz4KPHN0b3Agb2Zmc2V0PSI2MCUiIHN0b3AtY29sb3I9IiM4QkMzNEEiLz4KPHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiNDREU2OEQiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRjFGNkIwIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQyIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI0Y1REMzNyIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNGRkY1ODAiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8IS0tIEJhc2UgUGxhdGZvcm0gLS0+CjxwYXRoIGQ9Ik0yMCAxNjBMMjAgMTgwTDE4MiAxODBMMTgyIDE2MEwyMCAxNjBaIiBmaWxsPSJ1cmwoI2dyYWRpZW50MSkiLz4KPCEtLSBMZWZ0IEJyYWNrZXQgLS0+CjxwYXRoIGQ9Ik0yMCAzMEwyMCAxNzBMNDAgMTcwTDQwIDUwTDYwIDUwTDYwIDMwTDIwIDMwWiIgZmlsbD0idXJsKCNncmFkaWVudDEpIi8+CjwhLS0gQ2VudGVyIExldHRlciBPIC0tPgo8cGF0aCBkPSJNNzAgNzBMNzAgMTEwTDEwMCAxMTBMMTAwIDEzMEwxMzAgMTMwTDEzMCAxMTBMMTYwIDExMEwxNjAgNzBMMTMwIDcwTDEzMCA1MEwxMDAgNTBMMTAwIDcwTDcwIDcwWk05MCA5MUw5MCA5MEwxMTAgOTBMMTEwIDExMEwxNDAgMTEwTDE0MCA5MEwxMTAgOTBMMTEwIDcwTDkwIDcwTDkwIDkxWiIgZmlsbD0idXJsKCNncmFkaWVudDEpIi8+CjwhLS0gUmlnaHQgQnJhY2tldCAtLT4KPHBhdGggZD0iTTE0MCAzMEwxNDAgNTBMMTYwIDUwTDE2MCA1MEwxNzAgNTBMMTcwIDMwTDE0MCAzMFoiIGZpbGw9InVybCgjZ3JhZGllbnQxKSIvPgo8IS0tIFZlcnRpY2FsIFJpZ2h0IC0tPgo8cGF0aCBkPSJNMTYwIDEwMEwxNjAgMTcwTDE4MiAxNzBMMTgyIDEwMEwxNjAgMTAwWiIgZmlsbD0idXJsKCNncmFkaWVudDEpIi8+CjwhLS0gRCBMZXR0ZXIgLS0+CjxwYXRoIGQ9Ik0xMzAgMTEwTDEzMCAxNDBMMTUwIDE0MEwxNTAgMTYwTDE4MiAxNjBMMTgyIDE0MEwxNjAgMTQwTDE2MCA5MEwxODIgOTBMMTgyIDcwTDE1MCA3MEwxNTAgOTBMMTMwIDkwTDEzMCAxMTBaTTE1MCA5MEwxNTAgMTE0TDE2MiAxMTRMMTYyIDkwTDE1MCA5MFoiIGZpbGw9InVybCgjZ3JhZGllbnQyKSIvPgo8IS0tIERlY29yYXRpdmUgRWxlbWVudHMgLS0+CjxwYXRoIGQ9Ik0xMzAgNzBMMTMwIDUwTDEwMCA1MEwxMDAgNzBMMTMwIDcwWiIgZmlsbC1vcGFjaXR5PSIwLjciIGZpbGw9InVybCgjZ3JhZGllbnQyKSIvPgo8L3N2Zz4K" alt="LORD Logo"/>
+        </div>
+        <h1 class="title">ติดตามเรา LORD OBEC</h1>
+        <p class="subtitle">ติดตามกิจกรรมและข่าวสารจากเรา</p>
+        
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/share/1BgC8hUhu4/" class="social-btn facebook" target="_blank" rel="noopener noreferrer">
+                <svg class="social-icon" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                Facebook
+            </a>
+            
+            <a href="https://www.instagram.com/lordobec/profilecard/?igsh=MTQ2ODhxemNkOTg4dA==" class="social-btn instagram" target="_blank" rel="noopener noreferrer">
+                <svg class="social-icon" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+                Instagram
+            </a>
+            
+            <a href="https://www.tiktok.com/@lordobec?_t=ZS-8xByTeRO4eO&_r=1" class="social-btn tiktok" target="_blank" rel="noopener noreferrer">
+                <svg class="social-icon" viewBox="0 0 24 24">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                </svg>
+                TikTok
+            </a>
+        </div>
+    </div>
+</body>
+</html>
